@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>浏览器内核检测 by 张小璋</title>
+    <link href="https://cdn.bootcss.com/normalize/8.0.0/normalize.css" rel="stylesheet">
+    <style>
+        table{ 
+           margin: 0px auto;
+           line-height: 1.5rem;
+        }
+        td{
+            padding: 10px 20px;
+        }
+        tr:nth-of-type(odd){ 
+            background:#f2f2f2;
+        }
+    </style>
+    <script src="//cdn.staticfile.org/jquery/3.4.1/jquery.slim.js
+"></script>
+    <script src="js/navigator-min.js" type="text/javascript"></script>
+    <script src="http://pv.sohu.com/cityjson?ie=utf-8" type="text/javascript"></script>
+    <script src="bit.php" type="text/javascript"></script>
+    <script type="text/javascript">  
+        console.log(returnCitySN["cip"]+','+returnCitySN["cname"]);
+        console.log(bit["bit"]);
+    </script>
+</head>
+<body>
+    <h1 align="center">浏览器内核检测 by 张小璋</h1>
+<table align="center">
+    <tr>
+        <td>操作系统：</td>
+        <td id="os"></td>
+    </tr>
+    <tr>
+        <td>操作系统版本：</td>
+        <td id="osVersion"></td>
+    </tr>
+    <tr>
+        <td>架构：</td>
+        <td id="pcNum"></td>
+    </tr>
+    <tr>
+        <td>是否为移动端访问：</td>
+        <td id="isMobile"></td>
+    </tr>
+    <tr>
+        <td>浏览器：</td>
+        <td id="browser"></td>
+    </tr>
+    <tr>
+        <td>浏览器版本：</td>
+        <td id="browserVersion"></td>
+    </tr>
+    <tr>
+        <td>UserAgent</td>
+        <td id="agent"></td>
+    </tr>
+    <tr>
+        <td>IP：</td>
+        <td id="ip"></td>
+    </tr>
+        <tr>
+        <td>区域：</td>
+        <td id="cityName"></td>
+    </tr>
+</table>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("#os").html(params.os);
+        $("#osVersion").html(params.osVersion);
+        // $("#isMobile").html(params.mobile);
+        $("#pcNum").html(bit.bit);
+    });
+    
+</script>
+<script>
+        // document.getElementById("os").innerHTML = params.os;
+        // document.getElementById("osVersion").innerHTML = params.osVersion;
+        document.getElementById("isMobile").innerHTML = params.mobile;
+        // document.getElementById("browser").innerHTML = params.browser;
+        // document.getElementById("browserVersion").innerHTML = params.browserVersion;
+        // document.getElementById("pcNum").innerHTML = bit.bit;
+        // document.getElementById("agent").innerHTML = params.agent;
+        // document.getElementById("ip").innerHTML = returnCitySN.cip;
+        // document.getElementById("cityName").innerHTML = returnCitySN.cname+'（仅供参考）';
+    </script> 
+</div>
+</body>
+
+
+</html>
