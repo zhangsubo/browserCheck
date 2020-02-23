@@ -5,8 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>浏览器内核检测 by 张小璋</title>
-    <link href="https://cdn.bootcss.com/normalize/8.0.0/normalize.css" rel="stylesheet">
+    <link href="//cdn.bootcss.com/normalize/8.0.0/normalize.css" rel="stylesheet">
     <style>
+        .center{
+            margin:0 auto;
+            width: 70%;
+        }
+        .thanks{
+            margin:0 auto;
+            width: 95%;
+        } 
         table{ 
            margin: 0px auto;
            line-height: 1.5rem;
@@ -22,52 +30,55 @@
     <script src="bit.php" type="text/javascript"></script>
 </head>
 <body>
+<div class="center">
     <h1 align="center">浏览器内核检测 by 张小璋</h1>
-<table align="center">
-    <tr>
-        <td>操作系统：</td>
-        <td id="os"></td>
-    </tr>
-    <tr>
-        <td>操作系统版本：</td>
-        <td id="osVersion"></td>
-    </tr>
-    <tr>
-        <td>架构：</td>
-        <td id="pcNum"></td>
-    </tr>
-    <tr>
-        <td>是否为移动端访问：</td>
-        <td id="isMobile"></td>
-    </tr>
-    <tr>
-        <td>浏览器：</td>
-        <td id="browser"></td>
-    </tr>
-    <tr>
-        <td>浏览器版本：</td>
-        <td id="browserVersion"></td>
-    </tr>
-    <tr>
-        <td>UserAgent</td>
-        <td id="agent"></td>
-    </tr>
-    <tr>
-        <td>IP：</td>
-        <td id="ip"></td>
-    </tr>
+    <table align="center">
         <tr>
-        <td>区域：</td>
-        <td id="cityName"></td>
-    </tr>
-</table>
-<div>
-    <p>感谢以下服务：</p>
-
-
+            <td>操作系统：</td>
+            <td id="os"></td>
+        </tr>
+        <tr>
+            <td>操作系统版本：</td>
+            <td id="osVersion"></td>
+        </tr>
+        <tr>
+            <td>架构：</td>
+            <td id="pcNum"></td>
+        </tr>
+        <tr>
+            <td>是否为移动端访问：</td>
+            <td id="isMobile"></td>
+        </tr>
+        <tr>
+            <td>浏览器：</td>
+            <td id="browser"></td>
+        </tr>
+        <tr>
+            <td>浏览器版本：</td>
+            <td id="browserVersion"></td>
+        </tr>
+        <tr>
+            <td>UserAgent</td>
+            <td id="agent"></td>
+        </tr>
+        <tr>
+            <td>IP：</td>
+            <td id="ip"></td>
+        </tr>
+            <tr>
+            <td>区域：</td>
+            <td id="cityName"></td>
+        </tr>
+    </table>
+    <div class="thanks">
+        <p>感谢以下服务：</p>
+        <ul>1. <a href="https://necolas.github.io/normalize.css/">normalize.css</a>:一种可定制的、现代的、为HTML5准备的优质 CSS reset 替代方案</ul>
+        <ul>2. <a href="https://www.ipip.net/ip.html">ipip.net</a>全球领先的基于 BGP/ASN 数据分析处理而得来的实时 Geo-IP 库</ul>
+        <ul>3. <a href="https://www.aliyun.com/minisite/goods?userCode=v6vwncok">阿里云</a>:全球领先的云计算及人工智能科技公司</ul> 
+    </div>
+ 
 </div>
 
-</div>
 </body>
 <script>
         document.getElementById("os").innerHTML = params.os;
