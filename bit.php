@@ -45,7 +45,7 @@ $ip = get_client_ip();
 function get_ip_local($ip){
     $curl = curl_init();
     curl_setopt_array($curl, array(
-      CURLOPT_URL => "//freeapi.ipip.net/{$ip}",
+      CURLOPT_URL => "https://freeapi.ipip.net/{$ip}",
       CURLOPT_RETURNTRANSFER => true,
       CURLOPT_ENCODING => "",
       CURLOPT_MAXREDIRS => 10,
