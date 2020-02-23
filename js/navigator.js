@@ -148,15 +148,6 @@
                 break;
         }
 
-        var agent=nAgt.toLowerCase();
-        var pcNum = '';
-
-            if(agent.indexOf("win64")>=0||agent.indexOf("wow64")>=0)
-               pcNum = "x64";
-            else if (agent.indexOf("win32") >= 0 || agent.indexOf("wow32") >= 0)
-                pcNum = "x32";
-            else 
-                pcNum ="-";
         //detect data
         var params = {};
         params.os = os;//操作系统
@@ -165,8 +156,7 @@
         params.browser = browser;//浏览器
         params.browserVersion = version;//浏览器版本
         params.browserMajorVersion = majorVersion;//浏览器major版本
-        params.pcNum = pcNum;//操作系统位数
-        params.agent = agent;//UserAgent
+        params.agent = nAgt;//UserAgent
 
         //输出对象
         console.log(params);
