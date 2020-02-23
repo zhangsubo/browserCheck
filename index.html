@@ -61,7 +61,11 @@
         <td id="cityName"></td>
     </tr>
 </table>
+<div>
+    <p>感谢以下服务：</p>
 
+
+</div>
 
 </div>
 </body>
@@ -74,7 +78,11 @@
         document.getElementById("pcNum").innerHTML = bit.bit;
         document.getElementById("agent").innerHTML = params.agent;
         document.getElementById("ip").innerHTML = bit.ip;
-        document.getElementById("cityName").innerHTML = bit.country+bit.province+bit.city+bit.company+bit.isp+'（仅供参考）';
+        if (bit.province == bit.city) {
+            document.getElementById("cityName").innerHTML = bit.country+bit.province+bit.company+bit.isp+'（仅供参考）';
+        } else {
+           document.getElementById("cityName").innerHTML = bit.country+bit.province+bit.city+bit.company+bit.isp+'（仅供参考）'; 
+        }
     </script> 
 
 </html>
