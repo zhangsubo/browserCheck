@@ -32,6 +32,11 @@
             browser = 'Microsoft Internet Explorer';
             version = nAgt.substring(verOffset + 5);
         }
+    //QQBrowser 
+        else if ((verOffset = nAgt.indexOf('QQBrowser')) != -1) {
+            browser = 'QQBrowser';
+            version = nAgt.substring(verOffset + 5);
+        }
     // Chrome
         else if ((verOffset = nAgt.indexOf('Chrome')) != -1) {
             browser = 'Chrome';
